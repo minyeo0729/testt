@@ -1,0 +1,49 @@
+body { margin: 0; padding: 0;}
+#root{width: 100%; height: 100%;}
+
+.wrap{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ccc;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: white;
+  overflow: hidden; 
+}
+
+.container:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to right,
+      #ccc,
+      transparent 20%,
+      transparent 80%,
+      #ccc
+    );
+}
+
+.item{
+    position: relative;
+  display: inline-block;
+  margin-right: 2em;
+}
+.marquee-area{
+    display: inline-block;
+white-space: nowrap;}

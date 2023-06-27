@@ -1,0 +1,119 @@
+/* setting */
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+* { padding: 0; margin: 0; box-sizing: border-box; } 
+html { font-size: 6.25%; } 
+body { font-size: 16rem; overflow: hidden; } 
+ol, li { list-style: none; } 
+a { text-decoration: none; color: #000; } 
+button{background: transparent; cursor: pointer; outline: none; border: 0;}
+input{outline: none;}
+
+body{background: url(../img/backgroundrainbow.jpg) no-repeat center center; background-size: cover; width: 100vw; height: 100vh; }
+
+/* search */
+header{position: fixed; top: 0; left: 0; width: 100%;}
+.fixed{ margin: 100rem auto; max-width: 1200rem; }
+.search-box{background: #fff;border-radius: 50rem; padding: 5rem 25rem; height: 60rem; display: flex; align-items: center; }
+.search-text{border: 0; width: calc(100% - 10%); font-size: 20rem;}
+.search-icon{border: 0; font-size: 20rem;  width: 5%;flex-shrink:0;}
+.review-indexing{ width: 5%; text-align: center; flex-shrink:0; cursor: pointer;}
+.review-index{margin: 0 auto; font-size: 20rem; color: #fff;position: relative;}
+/* book label인데 필요할지 체크 -- .review-index:after{content: ''; color: #000; font-size: 8rem; width: 6rem; height: 6rem; position: absolute; right: 8rem; top: 0; background: peachpuff; border-radius: 50%;} */
+
+/* container */
+.container{margin: 200rem auto 0; max-width: 1200rem; border-radius: 20rem; width: 100%; padding: 10rem; height: 500rem; position: relative;}
+
+.default-message{text-align: center; font-family: 'Oooh Baby', cursive;font-size: 80rem; height: 100%; width: 100%; display: flex; justify-content: center; align-items: center; color: #fff; position: absolute; left: 0; top: 0; }
+
+.book-wrap{height: 100%; opacity: 0;visibility: hidden;position: absolute; left: 0; top: 0;}
+.book-result{font-size: 40rem; font-family: 'Oooh Baby', cursive; color: #fff; margin-bottom: 20rem; text-align: center;}
+.book-info li{display: flex; justify-content: center; align-items: center; gap: 100rem; position: relative;}
+.book-info li figure{width: 150rem; flex-shrink: 0;}
+.book-info li img{width: 100%; height: 100%;box-shadow: 3rem 3rem 6rem #666; }
+.book-info li p span{display: block; color: #333; margin-bottom: 5rem;}
+.book-title {font-size: 30rem;}
+.book-info li p span.book-author { font-size: 25rem; margin-bottom: 35rem;}
+.book-info li p span.book-desc{ display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; }
+
+/* write btn */
+.open-modal-btn{text-align: center;}
+.write-total{cursor: pointer;}
+
+/* for splash books motion */
+.write-emoji { position: absolute; user-select: none; z-index: 0; left: 50%; top: 50%; transform: translate(-50%, -50%);  }
+.write-emoji .item { display: inline-block; font-size: 12rem; position: absolute; z-index: -1; }
+
+/* modal */
+.overlay{width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; z-index: 10; top: 0; left: 0; opacity: 0; visibility: hidden;}
+.overlay .container {background: #fff; margin-top: 50rem; padding: 50rem; height: auto;}
+
+.review-wrap input { display: block; margin-bottom: 10rem;  border-style: none none solid none; border-color: #ddd; border-width: 1rem; font-size: 16rem;}
+.review-wrap input.review-title {width: 100%; padding-bottom: 5rem;}
+.review-wrap input.review-content {display: block; width: 100%; margin-bottom: 10rem; border-style: solid;border-radius: 5rem; padding: 5rem; padding-bottom: 150px; margin: 15rem 0 30rem;}
+.review-wrap input.review-writer {width: 70rem; display: inline-block;}
+.review-add{background: #ccc; padding: 10rem 35rem; border-radius: 5rem; }
+.review-inner{text-align: right;}
+.review-close{ position: absolute; right: 25rem; top: 25rem; }
+
+.home{display: none;}
+/* .listing-view{display: none;} */
+
+/* listing */
+/* .listing-view {display: none;} */
+.listing-view .container {/* background: #fff; */ margin-top: 50rem;}
+.listing-title{font-size: 40rem; font-family: 'Oooh Baby', cursive; color: #fff; margin-bottom: 100rem; text-align: center; } 
+.listing-view .flex {display: flex; justify-content: center; align-items: center; gap: 15rem;}
+.listing-view .overlay p:nth-of-type(2){margin: 10rem 0 20rem;}
+.listing-view .overlay p:last-child{text-align: right;}
+/* outline-color: rgba(); input 아웃라인 색 변경*/
+
+/* svg styles */
+.cls-1 { fill: #3db253; } .cls-2 { fill: #34a34e; } .cls-3 { fill: #7ab392; } .cls-4 { fill: none; } .cls-5 { fill: #83c49e; } .cls-6 { fill: #36ba4f; } .cls-7 { fill: #2e893f; } .cls-8 { fill: #024902; } .cls-9 { fill: #005a04; } .cls-10 { fill: #65a07d; } .cls-11 { fill: #076d07; } .cls-12 { isolation: isolate; } .cls-13 { fill: #db775d; } .cls-14 { fill: #ffc69f; } .cls-15 { fill: #efa189; } .cls-16 { clip-path: url(#clip-path); } .cls-17 { fill: #248e33; } .cls-18 { opacity: 0.37; } .cls-18, .cls-26, .cls-35, .cls-40, .cls-50, .cls-53, .cls-55, .cls-57, .cls-61, .cls-65, .cls-66, .cls-67, .cls-72, .cls-75, .cls-78, .cls-79 { mix-blend-mode: screen; } .cls-19 { clip-path: url(#clip-path-2); } .cls-20 { fill: #248436; } .cls-21 { clip-path: url(#clip-path-3); } .cls-22 { fill: #299b3c; } .cls-23 { clip-path: url(#clip-path-4); } .cls-24 { fill: #20772c; } .cls-25 { clip-path: url(#clip-path-5); } .cls-26 { opacity: 0.34; } .cls-27 { clip-path: url(#clip-path-6); } .cls-28 { fill: #4f8115; } .cls-29 { clip-path: url(#clip-path-7); } .cls-30 { fill: #5b8e1a; } .cls-31 { fill: #efbb29; } .cls-32 { clip-path: url(#clip-path-8); } .cls-33 { fill: #ef6590; } .cls-34 { fill: #fc77a3; } .cls-35 { opacity: 0.25; } .cls-36 { fill: #99d6b1; } .cls-37 { clip-path: url(#clip-path-9); } .cls-38 { opacity: 0.72; mix-blend-mode: multiply; } .cls-39 { fill: #064926; } .cls-40, .cls-44 { opacity: 0.41; } .cls-41 { clip-path: url(#clip-path-10); } .cls-42 { fill: #70a25d; } .cls-43 { fill: #588245; } .cls-45 { fill: #a0cf8d; } .cls-46 { fill: #669454; } .cls-47 { clip-path: url(#clip-path-11); } .cls-48 { fill: #ff94bd; } .cls-49 { fill: #94c358; } .cls-50 { opacity: 0.29; } .cls-51 { fill: #b8e570; } .cls-52 { fill: #8bb74e; } .cls-53 { opacity: 0.18; } .cls-54 { fill: #7ea842; } .cls-55 { opacity: 0.21; } .cls-56 { fill: #a1d359; } .cls-57 { opacity: 0.48; } .cls-58 { fill: #7fae6b; } .cls-59 { clip-path: url(#clip-path-12); } .cls-60 { fill: #80b238; } .cls-61 { opacity: 0.13; } .cls-62 { fill: #ace051; } .cls-63 { fill: #9fce5d; } .cls-64 { fill: #83aa46; } .cls-65 { opacity: 0.19; } .cls-66 { opacity: 0.53; } .cls-67 { opacity: 0.49; } .cls-68 { fill: #599672; } .cls-69 { clip-path: url(#clip-path-13); } .cls-70 { clip-path: url(#clip-path-14); } .cls-71 { fill: #82bc99; } .cls-72 { opacity: 0.4; } .cls-73 { clip-path: url(#clip-path-15); } .cls-74 { fill: #8ab545; } .cls-75 { opacity: 0.5; } .cls-76 { fill: #8abf71; } .cls-77 { fill: #87b24b; } .cls-78 { opacity: 0.47; } .cls-79 { opacity: 0.15; }
+
+/* cactus side */
+.cactus {width: calc(50% - 7rem); text-align: center;font-family: 'Oooh Baby', cursive;font-size: 30rem; color: #666;}
+.plants{text-align: center;}
+.plants svg { width: 80%; margin: 30rem auto 0; position: relative; opacity: 0; }
+.soil{transform-origin: center center; }
+
+/* listing side */
+.submitted-reviews {max-width: calc(50% - 7rem);min-width: 300rem;}
+.submitted-inner{cursor: pointer; border-bottom: 1rem solid #666; padding-bottom: 10rem; position: relative; text-align: right; padding-right: 30rem;}
+.submitted-index {position: absolute; left: -30rem; top: 50%; transform: translateY(-50%); background: peachpuff; width: 20rem; border-radius: 50%; text-align: center;}
+.submitted-title {float: left;}
+.submitted-writer, .submitted-date {color: #666;}
+.submitted-wrap {position: relative;}
+.submitted-delete{position: absolute; right: 0; top: 0;}
+
+.go-home {position: absolute; right: 10rem; top: 10rem; font-size: 20rem; cursor: pointer; display: inline-block;}
+
+
+
+
+/* responsive */
+@media(max-width: 1280px){
+    .container, .fixed{max-width: 780rem;}
+    .search-box{gap: 10rem;}
+}
+
+@media(max-width: 860px){
+    .container, .fixed{max-width: inherit; margin: 100rem 24rem 0;}
+    .container {width: auto; margin-top: 200rem; }
+    .book-title{font-size: 20rem;}
+    .book-info li p span.book-author{font-size: 16rem;}
+    .book-info li {gap: 50rem;}
+    .write-btn-wrap{padding: 10rem 20rem;}
+    .write-btn{font-size: 16rem;}
+}
+@media(max-width: 540px){
+    .container, .fixed{margin: 80rem 14rem 0;}
+    .container { margin-top: 180rem; }
+    .search-box{gap: 15rem;}
+    .search-icon, .review-index {font-size: 14rem;}
+    .book-desc{font-size: 14rem;}
+    .book-info li {gap: 20rem;}
+    .book-info li figure{width: 100rem;}
+    .book-info li p span.book-author {margin-bottom: 15rem;}
+    .write-btn-wrap{padding: 5rem 10rem;}
+    /* 퍼지는게 중간에서 조금 벗어나는거같음  */
+}

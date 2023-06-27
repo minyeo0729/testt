@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const newFavoriteImage = document.createElement("img");
+        fetch('https://cataas.com/cat?json=true')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (myJson) {
+                const OPEN_DOMAIN_URL = 'https://cataas.com/';
+                console.log(myJson)
+                newFavoriteImage.src = OPEN_DOMAIN_URL + myJson.url;
+                document.querySelector('body').append(newFavoriteImage);
+            })
+
+//blob으로 가져오는 방법 
+// const imageURL = 'https://cataas.com/cat'; // '/cat'이 원래 랜덤하게 나오는 주소, 위에 코드는 json=true가 꼭 들어가야함 
+// fetch(imageURL) 
+//   .then(res => res.blob())
+//   .then(blob => {
+//     console.log(blob);
+//     const objectURL = URL.createObjectURL(blob);
+//     console.log(objectURL);
+//     newFavoriteImage.src = objectURL;
+//     document.querySelector('body').append(newFavoriteImage);
+// 	});
+    </script>
+
+</body>
+
+</html>
